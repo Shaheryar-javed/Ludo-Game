@@ -1,0 +1,22 @@
+body {background-color: rgba(127, 255, 212, 0.219);}
+
+h1{
+    background-color: rgba(223, 133, 23, 0.171);
+    padding: 30px 490px;
+    border: double;
+   
+    
+}
+
+p {
+    background-color: rgba(184, 7, 175, 0.158); 
+}
+.ul-list {
+    background-color: rgba(27, 114, 201, 0.151);
+    scroll-padding: 5s;
+}
+.Nevigater {
+    background-color: rgba(53, 128, 226, 0.103);
+    padding:25px 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
