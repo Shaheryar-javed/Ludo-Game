@@ -1,0 +1,17 @@
+
+.heading {
+    border: 5px solid lightseagreen;
+    background-color: lightslategrey;
+    color: rgb(28, 53, 54);
+    text-align: center;
+}
+.cl{
+    background-color: rgb(54, 148, 151);
+    padding: 4% 15% 5% 30%;
+    opacity: 0.6;
+    
+}
+.btn {
+    padding: 5% 10% 5% 20%;
+    text-size-adjust: 10%;
+}
