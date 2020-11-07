@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    #body {
+        background-color: darkcyan;
+        border: 1px solid yellow;
+        
+    }
+
+.heading {
+    color: yellow;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: rgb(255, 136, 0) 20px;
+    padding: 1% 0% 2%;
+    font-size: 5rem;
+    font-family: 'Acme', sans-serif;
+}
+.container {
+    height: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+.dice {
+  
+   text-align: center;
+   display: inline-block;
+   padding: 2% 0% 2%;
+   border: 1px solid yellow;
+  
+}
+.player{
+    font-family: 'Acme', sans-serif;
+    color: yellow;
+    font-size: 3rem;
+}
+input {
+    text-align: center;
+}
+.btn {
+    text-align: center;
+    padding: 5% 5% 5% 5%;
+    background-color: cadetblue;
+}
+#btn1 {
+    padding: 3%;
+    background-color: lightskyblue;
+}
+
+</style>
+
+
+</head>
+<body id="body">
+   
+    
+    
+<div class="container">
+    <h1 class="heading">Ludo Game</h1>
+    
+    
+    <div class="dice" >
+        <h3 class="player"> player1</h3>
+        <img src="./Image/dice1.png" width="60%" height="60%" id="myImage" />
+    </div>
+
+    
+    <div class="dice">
+        <h3 class="player"> player2</h3>
+        <img src="./Image/dice1.png" width="60%" height="60%" id="myImage2"/>
+    </div>
+</div>
+
+<div class="btn">
+<button type="button" value="RENDOM" onClick="number()" id="btn1">Click For Won</button>
+
+</div>
+
+<div id="root"></div>
+
+
+<script type="text/javascript">
+
+const number = () => {
+  var num1 = Math.floor(Math.random() * 6 ) + 1 ;
+ var Image1 = `./Image/dice${num1}.png`; 
+ document.getElementById("myImage").setAttribute('src',Image1);
+
+
+
+
+
+ var num2 = Math.floor(Math.random() * 6 ) + 1 ;
+ var Image2 = `./Image/dice${num2}.png`;
+    document.getElementById("myImage2").setAttribute('src',Image2);
+
+
+    if (num1 > num2) {
+       document.querySelector('h1').innerHTML="Player 1 Won";
+    }else if (num2 > num1) {
+        document.querySelector('h1').innerHTML="Player 2 Won";
+    }else{
+        document.querySelector('h1').innerHTML="DRAW";
+    }
+}
+
+
+
+number();
+</script>
+
+
+
+</body>
+</html>
